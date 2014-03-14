@@ -3,8 +3,17 @@ layout: post
 category : lessons
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
+author : stpyang
 ---
 {% include JB/setup %}
+
+This is a test.
+
+$$
+a^2 + b^2 = c^2\\
+x^2 + y^2 = z^2\\
+$$
+
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
