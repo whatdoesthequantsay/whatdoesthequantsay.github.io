@@ -6,7 +6,7 @@ author: stpyang
 ---
 {% include JB/setup %}
 
-We are a pair of quantitative analysts living in the heart of downtown New York city
+We are a pair of quantitative analysts living in the heart of downtown Manhattan.
     
 ## Sample Posts
 

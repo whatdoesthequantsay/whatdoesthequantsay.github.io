@@ -63,3 +63,34 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+/* signature */
+.signature { 
+  margin-top: 3em;
+  position: relative;
+}
+.signature .author { 
+  font-variant: small-caps; 
+  font-style: normal; 
+  color: black;
+  display: block;
+  margin-bottom: 1.5em;
+}
+.signature .date { 
+  font-size: 87.5%;
+  line-height: 1.5em;
+  display: block; 
+  font-variant: small-caps; 
+  font-style: normal; 
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.signature .location { 
+  display: block; 
+  font-size: 87.5%;
+  line-height: 1.5em;
+  position: absolute;
+  right: 0;
+  top: 1.5em;
+}

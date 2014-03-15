@@ -11,7 +11,7 @@ markdown : kramdown
 # so be sure to set them if your theme uses them.
 #
 title : What does the quant say?
-tagline: Site Tagline
+# tagline: Site Tagline
 authors :
   stpyang: 
     name : Stephanie Yang
