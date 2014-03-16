@@ -102,7 +102,7 @@ end # task :post</font></code>
 The lines that we added are in black.  To create a new post using
 rake, we now use the command ```rake post title="Hello World" author=author1```.
 
-###Step 3: Create a signature##
+##Step 3: Create a signature##
 
 Every post should be signed and dated by its author at the end of the
 article.  We created a CSS signature class and append it to the end of
