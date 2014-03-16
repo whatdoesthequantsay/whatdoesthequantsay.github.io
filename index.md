@@ -1,7 +1,7 @@
 ---
 layout: page
 title: What does the quant say?
-tagline: Supporting tagline
+#tagline: Supporting tagline
 author: stpyang
 ---
 {% include JB/setup %}
