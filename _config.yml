@@ -15,12 +15,14 @@ title : What does the quant say?
 authors :
   stpyang: 
     name : Stephanie Yang
+    copyright : true
     email : stpyang@post.harvard.edu
     github : stpyang
     twitter : stpyang
 #   feedburner : feedname
   christian:
     name : Christian Lundkvist
+    copyright : true
     email : christian.lundkvist@gmail.com
     github : christian.lundkvist
     twitter : chrislundkvist

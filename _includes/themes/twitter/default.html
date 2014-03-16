@@ -67,7 +67,18 @@
       </div>
       <hr>
       <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+        <p>&copy; {{ site.time | date: '%Y' }}
+	  {% assign firstcopyright = false %}
+	  {% for author in site.authors %}
+	    {% if author[1].copyright %}
+	      {% if firstcopyright == false %}
+	        {% assign firstcopyright = true %}
+	      {% else %}
+	        and
+	      {% endif %}
+	      {{ author[1].name }}
+	    {% endif %}
+	  {% endfor %}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
