@@ -8,7 +8,7 @@ author: stpyang
 
 We are a pair of quantitative analysts living in the heart of downtown Manhattan.
     
-## Sample Posts
+## Posts
 
 <ul class="posts">
   {% for post in site.posts %}
