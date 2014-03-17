@@ -204,9 +204,7 @@ like this.
 
 If we are writing articles on our two computers at home and both want
 to run jekyll at the same time, we avoid port collisions by
-specifying different port numbers.
-
-```jekyll serve --port 4001```
+specifying different port numbers.  For example: `jekyll serve --port 4001`.
 
 ##Conclusion##
 
