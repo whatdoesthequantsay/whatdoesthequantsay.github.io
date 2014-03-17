@@ -9,9 +9,9 @@ tags: [metablog,liquid,jekyll,intro]
 
 One of the most delightful aspects of creating this blog is learning
 how to use [Jekyll Bootstrap](http://jekyllbootstrap.com).  The
-default twitter theme for JB only supports only author.  In this post
-we describe how we made minimal changes to five files in order to add
-support for multiple authors.
+default twitter theme for JB only supports only one author.  In this
+post we describe how we made minimal changes to five files in order to
+add support for multiple authors.
 
 In the snippets below, we have grayed out the parts of the files which have
 not been changed, in order to emphasize the parts which have been changed.
