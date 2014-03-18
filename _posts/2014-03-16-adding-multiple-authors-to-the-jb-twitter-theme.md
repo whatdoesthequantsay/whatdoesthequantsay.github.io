@@ -21,11 +21,11 @@ not been changed, in order to emphasize the parts which have been changed.
 We first reformatted the author section in the `_config.yml` to support
 more than one author.
 
-<pre><font color="gray"># Themes are encouraged to use these universal variables 
+<pre><span style="color:gray"># Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
 title : Jekyll Bootstrap
-tagline: Site Tagline</font>
+tagline: Site Tagline</span>
   authors :
     author1: 
       name : Name1 Lastname1
@@ -63,12 +63,12 @@ three lines plus one comment.
 
 <pre>
 # Usage: rake post title="A Title" [date="2012-02-09"][tags=[tag1,tag2]] [category="category] [author="author"]
-<font color="gray">desc "Begin a new post in #{CONFIG['posts']}"
+<span style="color:gray">desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
-  <font color="black">author = ENV["author"] || ""
-  author = "#{author.gsub(/-/,' ')}" if !author.empty?</font>
+  <span style="color:black">author = ENV["author"] || ""
+  author = "#{author.gsub(/-/,' ')}" if !author.empty?</span>
   tags = ENV["tags"] || "[]"
   category = ENV["category"] || ""
   category = "\"#{category.gsub(/-/,' ')}\"" if !category.empty?
@@ -89,14 +89,14 @@ task :post do
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    <font color="black">post.puts "author: #{author}"</font>
+    <span style="color:black">post.puts "author: #{author}"</span>
     post.puts 'description: ""'
     post.puts "category: #{category}
     post.puts "tags: #{tags}"
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end
-end # task :post</font>
+end # task :post</span>
 </pre>
 
 The lines that we added are in black.  To create a new post using
@@ -110,9 +110,9 @@ writing eleven lines of liquid-fu.  We replaced the footer in
 `_include/themes/twitter/default.html` with:
 
 <pre>
-<font color="gray">&lt;footer&gt;
+<span style="color:gray">&lt;footer&gt;
   &lt;p&gt;&amp;copy; &#123;&#123; site.time | date: '%Y' &#125;&#125;
-  <font color="black">&#123;% assign firstcopyright = false %&#125;
+  <span style="color:black">&#123;% assign firstcopyright = false %&#125;
   &#123;% for author in site.authors %&#125;
     &#123;% if author[1].copyright %&#125;
       &#123;% if firstcopyright == false %&#125;
@@ -122,11 +122,11 @@ writing eleven lines of liquid-fu.  We replaced the footer in
       &#123;% endif %&#125;
     &#123;&#123; author[1].name &#125;&#125;
     &#123;% endif %&#125;
-  &#123;% endfor %&#125;</font>
+  &#123;% endfor %&#125;</span>
   with help from &lt;a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework"&gt;Jekyll Bootstrap&lt;/a&gt;
   and &lt;a href="http://twitter.github.com/bootstrap/" target="_blank"&gt;Twitter Bootstrap&lt;/a&gt;
   &lt;/p&gt;
-&lt;/footer&gt;</font>
+&lt;/footer&gt;</span>
 </pre>
  
 The copyright footer now contains the name of all of the authors with 
@@ -182,18 +182,18 @@ Next we add a corresponding signature section to
 `_includes/themes/twitter/post.html` immediately after the content section.
 
 <pre>
-<font color="gray"><&lt;div class="row-fluid post-full"&gt;
+<span style="color:gray"><&lt;div class="row-fluid post-full"&gt;
   &lt;div class="span12"&gt;
     &lt;div class="content"&gt;
       &#123;&#123; content &#125;&#125;
-    &lt;/div&gt;</font>
+    &lt;/div&gt;</span>
 
 &#123;% assign author = site.authors[page.author] %&#125;
 &lt;address class="signature"&gt;
   &lt;a class="author" href="&#123;&#123; HOME_PATH &#125;&#125;"&gt;&#123;&#123; author.name &#125;&#125;&lt;/a&gt; 
   &lt;span class="date"&gt;&#123;&#123; page.date | date_to_long_string &#125;&#125;&lt;/span&gt;
   &lt;span class="location"&gt;&#123;&#123; page.location &#125;&#125;&lt;/span&gt;
-&lt;/address&gt;</font>
+&lt;/address&gt;</span>
 </pre>
 
 A signature is now automatically generated for all posts and and looks like this.
