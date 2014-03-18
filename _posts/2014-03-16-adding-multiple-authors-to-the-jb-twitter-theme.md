@@ -3,7 +3,7 @@ layout: post
 title: "Adding multiple authors to the JB Twitter theme"
 description: "How we did it"
 author: stpyang
-tags: [metablog,liquid,jekyll,intro]
+tags: [metablog,intro]
 ---
 {% include JB/setup %}
 
@@ -21,7 +21,7 @@ not been changed, in order to emphasize the parts which have been changed.
 We first reformatted the author section in the `_config.yml` to support
 more than one author.
 
-<pre><code><font color="gray"># Themes are encouraged to use these universal variables 
+<pre><font color="gray"># Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
 title : Jekyll Bootstrap
@@ -52,7 +52,7 @@ tagline: Site Tagline</font>
 
 The copyright field for each author should be set to true in order for
 the author's name to appear in the copyright footer (see
-[Step 4](#step4)) and false otherwise.  Guest authors have copyright
+[Step 4](#step3)) and false otherwise.  Guest authors have copyright
 set to false.
 
 ##Step 2: Change the Rakefile##
@@ -62,7 +62,7 @@ Matter of any newly generated post.  This is accomplished with in just
 three lines plus one comment.
 
 <pre>
-<code># Usage: rake post title="A Title" [date="2012-02-09"][tags=[tag1,tag2]] [category="category] [author="author"]
+# Usage: rake post title="A Title" [date="2012-02-09"][tags=[tag1,tag2]] [category="category] [author="author"]
 <font color="gray">desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
@@ -96,13 +96,51 @@ task :post do
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end
-end # task :post</font></code>
+end # task :post</font>
 </pre>
 
 The lines that we added are in black.  To create a new post using
 rake, we now use the command ```rake post title="Hello World" author=author1```.
 
-##Step 3: Create a signature##
+  
+##Step 3: Modify the copyright## {#step3}
+
+We changed the copyright footer throughout the entire blog to contain 
+both of our names.  This step was the trickiest and involved 
+writing eleven lines of liquid-fu.  We replaced the footer in 
+`_include/themes/twitter/default.html` with:
+
+<pre>
+<font color="gray">&lt;footer&gt;
+  &lt;p&gt;&amp;copy; &#123;&#123; site.time | date: '%Y' &#125;&#125;
+  <font color="black">&#123;% assign firstcopyright = false %&#125;
+  &#123;% for author in site.authors %&#125;
+    &#123;% if author[1].copyright %&#125;
+      &#123;% if firstcopyright == false %&#125;
+        &#123;% assign firstcopyright = true %&#125;
+      &#123;% else %&#125;
+        and 
+      &#123;% endif %&#125;
+    &#123;&#123; author[1].name &#125;&#125;
+    &#123;% endif %&#125;
+  &#123;% endfor %&#125;</font>
+  with help from &lt;a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework"&gt;Jekyll Bootstrap&lt;/a&gt;
+  and &lt;a href="http://twitter.github.com/bootstrap/" target="_blank"&gt;Twitter Bootstrap&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/footer&gt;</font>
+</pre>
+ 
+The copyright footer now contains the name of all of the authors with 
+for whom `copyright = true` in the `_config.yml` file and looks 
+like this. 
+
+> <p style="font-size:90%">&copy; 2014 Name1 Lastname1 and Name2 Lastname2 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></p>
+
+##Step 4: Create a signature (optional)##
+
+*Edit: An earlier version of this blog automatically appended a
+ signature with the author name and date at the end of each article.
+ We now sign and date our articles in the sidebar.*
 
 Every post should be signed and dated by its author at the end of the
 article.  We created a CSS signature class and append it to the end of
@@ -145,7 +183,7 @@ Next we add a corresponding signature section to
 `_includes/themes/twitter/post.html` immediately after the content section.
 
 <pre>
-<code><font color="gray"><&lt;div class="row-fluid post-full"&gt;
+<font color="gray"><&lt;div class="row-fluid post-full"&gt;
   &lt;div class="span12"&gt;
     &lt;div class="content"&gt;
       &#123;&#123; content &#125;&#125;
@@ -156,7 +194,7 @@ Next we add a corresponding signature section to
   &lt;a class="author" href="&#123;&#123; HOME_PATH &#125;&#125;"&gt;&#123;&#123; author.name &#125;&#125;&lt;/a&gt; 
   &lt;span class="date"&gt;&#123;&#123; page.date | date_to_long_string &#125;&#125;&lt;/span&gt;
   &lt;span class="location"&gt;&#123;&#123; page.location &#125;&#125;&lt;/span&gt;
-&lt;/address&gt;</font></code>
+&lt;/address&gt;</font>
 </pre>
 
 A signature is now automatically generated for all posts and and looks like this.
@@ -166,39 +204,6 @@ A signature is now automatically generated for all posts and and looks like this
     <a class="author" href="/">Name1 Lastname1</a> 
     <span class="date">16 March 2014</span>
     <span class="location"></span></address></p>
-  
-##Step 4: Modify the copyright## {#step4}
-
-We changed the copyright footer throughout the entire blog to contain
-both of our names.  This step was the trickiest and involved
-writing eleven lines of liquid-fu.  We replaced the footer in
-`_include/themes/twitter/default.html` with:
-
-<pre>
-<code><font color="gray">&lt;footer&gt;
-  &lt;p&gt;&amp;copy; &#123;&#123; site.time | date: '%Y' &#125;&#125;
-  <font color="black">&#123;% assign firstcopyright = false %&#125;
-  &#123;% for author in site.authors %&#125;
-    &#123;% if author[1].copyright %&#125;
-      &#123;% if firstcopyright == false %&#125;
-        &#123;% assign firstcopyright = true %&#125;
-      &#123;% else %&#125;
-        and 
-      &#123;% endif %&#125;
-    &#123;&#123; author[1].name &#125;&#125;
-    &#123;% endif %&#125;
-  &#123;% endfor %&#125;</font>
-  with help from &lt;a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework"&gt;Jekyll Bootstrap&lt;/a&gt;
-  and &lt;a href="http://twitter.github.com/bootstrap/" target="_blank"&gt;Twitter Bootstrap&lt;/a&gt;
-  &lt;/p&gt;
-&lt;/footer&gt;</font></code>
-</pre>
- 
-The copyright footer now contains the name of all of the authors with
-for whom `copyright = true` in the `_config.yml` file and looks
-like this.
-
-> <p style="font-size:90%">&copy; 2014 Name1 Lastname1 and Name2 Lastname2 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></p>
 
 ##Run jekyll with custom ports##
 
