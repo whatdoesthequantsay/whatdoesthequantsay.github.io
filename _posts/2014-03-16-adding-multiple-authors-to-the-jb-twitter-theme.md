@@ -199,7 +199,6 @@ Next we add a corresponding signature section to
 A signature is now automatically generated for all posts and and looks like this.
 
 > <p style="font-size:90%"><address class="signature">
- <address class="signature">
     <a class="author" href="/">Name1 Lastname1</a> 
     <span class="date">16 March 2014</span>
     <span class="location"></span></address></p>
