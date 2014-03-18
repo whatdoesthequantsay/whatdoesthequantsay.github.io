@@ -203,6 +203,7 @@ A signature is now automatically generated for all posts and and looks like this
     <a class="author" href="/">Name1 Lastname1</a> 
     <span class="date">16 March 2014</span>
     <span class="location"></span></address></p>
+	</address>
 
 ##Run jekyll with custom ports##
 
