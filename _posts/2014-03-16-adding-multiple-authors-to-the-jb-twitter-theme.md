@@ -52,7 +52,7 @@ tagline: Site Tagline</font>
 
 The copyright field for each author should be set to true in order for
 the author's name to appear in the copyright footer (see
-[Step 4](#step3)) and false otherwise.  Guest authors have copyright
+[Step 3](#step3)) and false otherwise.  Guest authors have copyright
 set to false.
 
 ##Step 2: Change the Rakefile##
@@ -102,7 +102,6 @@ end # task :post</font>
 The lines that we added are in black.  To create a new post using
 rake, we now use the command ```rake post title="Hello World" author=author1```.
 
-  
 ##Step 3: Modify the copyright## {#step3}
 
 We changed the copyright footer throughout the entire blog to contain 
