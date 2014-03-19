@@ -39,6 +39,8 @@ covered by federal funds.  Of course, one could argue that female
 members congress could also have a vested interested in penis pumps as
 well, but we do ***not*** want to get into that.
 
+<!-- more -->
+ 
 Now the number crunching. According to the report, Medicare has spent
 a total of $172 million supplying penis pumps to recipients, at "360
 bucks a pop."  This means a total of 478,000 penis pumps bought from

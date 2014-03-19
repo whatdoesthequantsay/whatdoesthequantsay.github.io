@@ -6,15 +6,19 @@ author: stpyang
 ---
 {% include JB/setup %}
 
-We are a pair of quantitative analysts living in the heart of downtown Manhattan.
-    
-## Posts
+*We are a pair of quantitative analysts living in the heart of downtown Manhattan.*
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+#Recent Posts#
+<div class="post-content-truncate">
+{% for post in site.posts limit:10 %}
+  {% if post.content contains "<!-- more -->" %}
+    <h3 class="title">{{ post.title }}</h3>
+   {{ post.content | split:"<!-- more -->" | first % }}
+    <a href="{{ post.url }}">Read more</a>
+    <hr/>
+  {% endif %}
+{% endfor %}
+</div>
 
 
 

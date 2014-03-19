@@ -13,6 +13,8 @@ default twitter theme for JB only supports only one author.  In this
 post we describe how we made minimal changes to five files in order to
 add support for multiple authors.
 
+<!-- more -->
+
 In the snippets below, we have grayed out the parts of the files which have
 not been changed, in order to emphasize the parts which have been changed.
 
