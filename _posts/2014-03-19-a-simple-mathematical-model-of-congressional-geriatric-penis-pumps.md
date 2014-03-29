@@ -7,13 +7,9 @@ tags: [statistics, penispump]
 ---
 {% include JB/setup %}
 
-<div class="media">
-<a class="pull-left">
 <meta property="og:image" content="/assets/images/samantha_bee_daily_show.png" />
-<img style="media-object; height:92%; width:92%;" src="/assets/images/samantha_bee_daily_show.png" alt="samantha bee is awesome"/>
-</a>
-</div>
-
+<img style="float:left; width: 250px; padding:10px" src="/assets/images/samantha_bee_daily_show.png" alt="samantha bee is awesome"/>
+ 
 Last week's hysterical report by the Daily Show's Samantha Bee on
 [federally funded penis pumps](http://thedailyshow.cc.com/videos/pvhtvo/federally-funded-penis-pumps)
 contained a quote which piqued our quantitative interest.  Listen
