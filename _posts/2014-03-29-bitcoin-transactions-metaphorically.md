@@ -4,7 +4,6 @@ title: "Bitcoin transactions, metaphorically"
 description: ""
 author: christian
 tags: [bitcoin]
-category: Christian
 ---
 {% include JB/setup %}
 

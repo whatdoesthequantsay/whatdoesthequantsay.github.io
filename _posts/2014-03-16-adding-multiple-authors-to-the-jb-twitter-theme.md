@@ -4,7 +4,6 @@ title: "Adding multiple authors to the JB Twitter theme"
 description: "How we did it"
 author: stpyang
 tags: [metablog,intro]
-category: Stephanie
 ---
 {% include JB/setup %}
 

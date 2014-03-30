@@ -4,7 +4,6 @@ title: "A simple mathematical model of congressional geriatric penis pumps"
 description: "inspired by the Daily Show"
 author: stpyang
 tags: [statistics, penispump]
-category: Stephanie
 ---
 {% include JB/setup %}
 
