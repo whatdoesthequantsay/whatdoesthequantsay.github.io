@@ -11,43 +11,7 @@ No journalist should be allowed to publish unless they demonstrate a
 solid understanding of statistics.  Too often, the media fails to use
 data properly; rather, they *abuse* data in order to lend credibility
 to subpar reporting habits, because quoting a statistic lends an air
-of authenticity to an argument.  After, just listen to the persuasive
-tone with which Ilyse Hogue declares that 
-[fedarally funded penis pumps have made their way into congress](http://www.thewrap.com/daily-show-exposes-172-million-federal-penis-pump-spending-video/)
-(start listening at 4:00)
-
-> *Statistics show that probably some members of congress have a vested
-> interested in having penis pumps covered by medicare!*
-
-Is this true?  Ilya's wording is vague, but her tone of voice is
-authoritative.  Let's run through the calculations:
-
-1. According to the report, medicare has spent $172 million on penis
-pumps, at the cost of $360 each.  That's a total of 477,778 total
-penis pumps bought from 2006 to 2011.
-
-2. [45% of the current 49,435,610 medicare recipients are
-male](http://kff.org/medicare/state-indicator/medicare-beneficiaries-by-gender/),
-which means there is one penis pump every 46.5 males on medicare.
-Inverting this number, about 2.15% of males on medicare receive a
-penis pump (assuming of course that nobody received two!).
-
-3. There are currently 32 senators and 96 members of the house who are
-medicare-eligible males.  The probability of *none* of them receiving
-a penis pump from medicare is approximately:
-
-$$0.9785^{128} \approx .0619$$
-
-About 6.19%.  In other words, the chances of *at least* one member of
-congress having a medicare-funded penis pump is then 93.8%.  This is
-just shy 95% confidence interval that most statistians agree is
-significant.  In order to have 95% confidence in congressional
-geriatric penis pumps, one would need to have a total of 138
-medicare-eligible males in congress, which has not happened yet.
-
-Ilyse is close but still shy of statistical certainty, which accounts
-for the vague wording of her statement: "Statistics show that this is
-*probably* true."
+of authenticity to an argument.
 
 The problem with statistics in the media is, to quote Mark Twain:
 "Facts are stubborn things, but statistics are more pliable."
@@ -92,7 +56,7 @@ Statistics.  The vertical bars represent income ranges of width $5,000
 for values up to $200,000, which is roughly the 95% percentile of
 household income.
 
-![alt text]({{ site.url }}/assets/images/2014-03-08_household_income.png "see the skew!?!?") 
+![alt text]({{ site.url }}/assets/data/2014-03-08_household_income.png "see the skew!?!?") 
 
 Because the distribution is asymetrically skewed to the right, the *median* household income is a hair aboe
 $60,000 and lies in orange bar.  The *mean* household income is just
@@ -113,7 +77,7 @@ non-renters from their data point.  A direct comparison of gross rent
 as a percentage of income is available from [American Community
 Survey](https://www.census.gov/acs/www/)
 
-![alt text]({{ site.url }}/assets/images/2014-03-08_gross_rent_as_percentage_of_household_income.png
+![alt text]({{ site.url }}/assets/data/2014-03-08_gross_rent_as_percentage_of_household_income.png
  "?") 
 
 Orange represent the distribution for New York County (557,868 sampes)
