@@ -142,13 +142,14 @@ so you keep it secure at home.
 
 Now let's assume you want to give some coins, say 0.25 BTC, to a
 friend who bought you dinner the other day. You download the standard
-bitcoin client[link] and you import your private key into it. This
-makes it so that the software can open the safe and send coins on your
-behalf. Your software says you have 1.0 BTC. You then use the software
-to send 0.25 BTC to your friends address. The software now says you
-have 0.75 BTC. Your (incorrect but plausible) metaphor says that
-you've taken 0.25 BTC from your safe and deposited it into your
-friends safe, leaving 0.75 BTC in your safe.
+[Bitcoin Core client](https://bitcoin.org/en/choose-your-wallet) and
+you import your private key into it. This makes it so that the
+software can open the safe and send coins on your behalf. Your
+software says you have 1.0 BTC. You then use the software to send 0.25
+BTC to your friends address. The software now says you have 0.75
+BTC. Your (incorrect but plausible) metaphor says that you've taken
+0.25 BTC from your safe and deposited it into your friends safe,
+leaving 0.75 BTC in your safe.
 
 Let's now say you need to sell your computer, so you erase everything
 on the harddrive to make sure that no one else can read your personal
