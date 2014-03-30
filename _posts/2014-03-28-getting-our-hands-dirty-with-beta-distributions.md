@@ -4,6 +4,7 @@ title: "Getting our hands dirty with beta functions"
 description: ""
 author: stpyang
 tags: [statistics]
+category: Stephanie
 ---
 {% include JB/setup %}
 
