@@ -47,8 +47,8 @@ task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
   tags = ENV["tags"] || "[]"
-#  category = ENV["category"] || ""
-#  category = "\"#{category.gsub(/-/,' ')}\"" if !category.empty?
+  category = ENV["category"] || ""
+  category = "\"#{category.gsub(/-/,' ')}\"" if !category.empty?
   author = ENV["author"] || ""
   author = "#{author.gsub(/-/,' ')}" if !author.empty?
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
@@ -69,9 +69,9 @@ task :post do
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts 'description: ""'
-#    post.puts "category: #{category}"
     post.puts "author: #{author}"
     post.puts "tags: #{tags}"
+    post.puts "category: #{category}"
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end

@@ -117,7 +117,7 @@ safe you can also find the location of the safe. So private keys must
 be kept exactly that: private.
 
 An interesting thing about private keys is that we can choose any
-number between 1 and N-1, use it to create a safe (address) with that
+number between 1 and $$N-1$$, use it to create a safe (address) with that
 number as the private key and start receiving coins to that
 address. Anyone can have as many safes as they like, and the new safes
 don't take up any space in the blockchain until some coins are
