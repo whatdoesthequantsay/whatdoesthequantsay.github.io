@@ -26,6 +26,3 @@ author: stpyang
 {% endfor %}
 </div>
 
-
-
-
