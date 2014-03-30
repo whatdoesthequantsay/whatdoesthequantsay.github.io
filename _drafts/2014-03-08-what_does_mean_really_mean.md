@@ -52,8 +52,6 @@ the right, with the median lying below the mean.  By comparing the
 *median* house income to the *mean* apartment price, AM-NY
 purposefully and greatly exaggerated the amount that typical New Yorkers pay in rent.
 
-###Income versus rent, part II
-
 Media and mean aside, there is fundamental fact that the editorial
 also failed to mention.  [Almost a quarter households in New York
 County own their apartments.](http://factfinder2.census.gov) The
