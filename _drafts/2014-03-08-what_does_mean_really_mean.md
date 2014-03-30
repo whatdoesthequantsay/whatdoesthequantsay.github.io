@@ -11,15 +11,13 @@ tags: [statistics]
  "jimmy mcmillan does not approve") 
 
 In a
-[am recent editorial on the the rental market in New York](http://www.amny.com/opinion/editorial/editorial-nyc-s-big-challenge-is-to-hold-costs-down-1.7296517),
-the editorial board made an statistical error of the most fundamental
-type when they wrote:
+[recent editorial on the the rental market in New York](http://www.amny.com/opinion/editorial/editorial-nyc-s-big-challenge-is-to-hold-costs-down-1.7296517),
+the editorial board of AM-NY made an statistical error of the most
+fundamental type when they wrote:
 
->*For example: The city's median household income is more than $52,000
-> a year. And the average rent in the city is upward of $3,000 a month
-> -- or $36,000-plus a year.*
->
->*Which means?*
+>*The city's median household income is more than $52,000 a year. And
+> the average rent in the city is upward of $3,000 a month -- or
+> $36,000-plus a year.* *Which means?*
 
 What *does* this mean?  Almost nothing, because *median* and *mean* are
 fundamentally different statistics about distributions.  The only
@@ -79,8 +77,8 @@ income in rent is an astounding 2.27 times higher than the national
 proportion.  Similarly, the proportion of New York County residents
 who pay more than 50% of their national income is 13% lower than the
 national proportion.  The typical New Yorker actually spends *less* of
-her income on rent than the typical American at large.  This is most
-like due to two factors:
+her income on rent than the typical American at large!  This is most
+like due to three factors:
 
 1. Exceptionally high real estate prices in New York cause a majority
    of working professionals rent, even with inome from jobs from
