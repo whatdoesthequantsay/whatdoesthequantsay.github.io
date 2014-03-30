@@ -10,18 +10,16 @@ tags: [statistics]
 ![alt text](http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Jimmy_McMillan_Blue_2_2011_Shankbone.jpg/220px-Jimmy_McMillan_Blue_2_2011_Shankbone.jpg
  "jimmy mcmillan does not approve") 
 
-In a [am recent editorial on the the rental market in New
-York](http://www.amny.com/opinion/editorial/editorial-nyc-s-big-challenge-is-to-hold-costs-down-1.7296517),
-the editorial board displayed an egregious statistical error of the
-most fundamental type when they wrote:
+In a
+[am recent editorial on the the rental market in New York](http://www.amny.com/opinion/editorial/editorial-nyc-s-big-challenge-is-to-hold-costs-down-1.7296517),
+the editorial board made an statistical error of the most fundamental
+type when they wrote:
 
 >*For example: The city's median household income is more than $52,000
 > a year. And the average rent in the city is upward of $3,000 a month
 > -- or $36,000-plus a year.*
 >
 >*Which means?*
-
-###Comparing income to rent Part I
 
 What *does* this mean?  Almost nothing, because *median* and *mean* are
 fundamentally different statistics about distributions.  The only
