@@ -45,7 +45,7 @@ Statistics.  The vertical bars represent income ranges of width $5,000
 for values up to $200,000, which is roughly the 95% percentile of
 household income.
 
-![alt text]({{ site.url }}/assets/data/2014-03-08_household_income.png "see the skew!?!?") 
+<img style="float:left; width: 550px; padding:10px" src="/assets/data/2014-03-08_household_income.png" alt=""/>
 
 Because the distribution is asymetrically skewed to the right, the *median* household income is a hair aboe
 $60,000 and lies in orange bar.  The *mean* household income is just
@@ -66,8 +66,7 @@ non-renters from their data point.  A direct comparison of gross rent
 as a percentage of income is available from [American Community
 Survey](https://www.census.gov/acs/www/)
 
-![alt text]({{ site.url }}/assets/data/2014-03-08_gross_rent_as_percentage_of_household_income.png
- "?") 
+<img style="float:left; width: 550px; padding:10px" src="/assets/data/2014-03-08_gross_rent_as_percentage_of_household_income.png" alt=""/>
 
 Orange represent the distribution for New York County (557,868 sampes)
 and the blue represents the distribution for the entire United States
