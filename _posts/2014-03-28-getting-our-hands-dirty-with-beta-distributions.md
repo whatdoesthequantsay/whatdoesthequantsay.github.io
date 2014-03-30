@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Getting our hands dirty with beta functions"
-description: "A filthy little calculation"
+description: ""
 author: stpyang
 tags: [statistics]
 ---
