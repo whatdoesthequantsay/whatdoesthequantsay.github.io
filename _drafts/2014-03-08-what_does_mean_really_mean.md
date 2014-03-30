@@ -96,9 +96,7 @@ like due to two factors:
 
 ###Summary
 
-We do not disagree with either the Daily Show or AM-NY.  The outcry of
-federally-funded birth control *is* ridiculous when compared to the
-number overnment-funded geriatric penis pumps that have attracted no
-controversy at all.  In New York, apartment rents are too damn high!
-However, we simply cannot turn off our quantishness whenever we watch
-TV or read the news.  Journalists, please don't abuse the statistics!
+We do not disagree with AM-NY's assesment.  In New York, apartment
+rents are too damn high!  However, we simply cannot turn off our
+disdain for bad statistics whenever we watch TV or read the news.
+Journalists, please don't abuse the statistics!
