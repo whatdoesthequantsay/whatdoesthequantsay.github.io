@@ -7,10 +7,7 @@ author: stpyang
 {% include JB/setup %}
 
 *We are a pair of quantitative analysts living in the heart of
- downtown Manhattan.  We create mathematical models by day and have
- passionately nerdy debates at night.  We also dir dive under water,
- telemark ski below freezing, and one of us runs like a girl all year
- round.*
+ downtown Manhattan.*
 
 #Recent Posts#
 <div class="post-content-truncate">
