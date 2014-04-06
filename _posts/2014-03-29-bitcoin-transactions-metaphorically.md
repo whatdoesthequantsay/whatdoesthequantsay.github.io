@@ -3,7 +3,7 @@ layout: post
 title: "Bitcoin transactions, metaphorically"
 description: ""
 author: christian
-tags: [bitcoin]
+tags: [christian,bitcoin]
 ---
 {% include JB/setup %}
 

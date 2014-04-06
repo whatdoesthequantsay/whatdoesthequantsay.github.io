@@ -3,7 +3,7 @@ layout: post
 title: "What does mean mean, really?"
 description: ""
 author: stpyang
-tags: [statistics]
+tags: [stephanie,statistics]
 category:
 ---
 {% include JB/setup %}
@@ -47,10 +47,10 @@ and $$d = 2$$ respectively.  However, the geometric mean looks
 like it doesn't fit in.
 
 The power mean is undefined when $$d = 0$$ because of that pesky exponent
-$$\frac{1}{d}$$.  However, since the power mean is define for all nonzero value
+$$\frac{1}{d}$$.  However, since the power mean is defined for all nonzero value
 of $$d$$, it is in particular defined for $$d$$ near zero and hence we can take
 a limit. We even get to invoke [L'Hopital's
-rule](http://en.wikipedia.org/wiki/L'Hôpital's_rule) along the way.  Hooray!
+rule](http://en.wikipedia.org/wiki/L'Hôpital's_rule) along the way.
 
 For ease of notation, let $$S(d)$$ represent the sum
 
@@ -135,7 +135,7 @@ mean < arithmetic mean < quadratic mean, which is consistent with our
 observation that the power $$d$$ in the power means formula represents how close
 the mean will be to the smallest or largest element of our sequence (in this
 case 1 and 99).  This is an example of the **generalized mean inequality**,
-which states that if we define the power means $$P_d$$ as
+which states that if we define $$P_d$$ as
 
 $$
 \begin{align}

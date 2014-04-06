@@ -3,13 +3,13 @@ layout: post
 title: "Getting our hands dirty with beta functions"
 description: ""
 author: stpyang
-tags: [statistics]
+tags: [stephanie,statistics]
 ---
 {% include JB/setup %}
 
 <meta property="og:image" content="/assets/data/beta.png" />
 <img style="float:left; width: 300px; padding:8px" src="/assets/data/beta.png" alt=""/>
- 
+
 We just finished watching a
 [YouTube tutorial on Dirichlet distributions](https://www.youtube.com/watch?v=6k7IzONQOzM)
 given by Foursquare data scientist Max Sklar.  According to Wikipedia,
@@ -23,7 +23,7 @@ brush the cobwebs from our minds and derive a basic identity between
 illustrate our calculations with R.
 
 <!-- more -->
-  
+
 Beta distributions are defined by density functions
 
 $$f(x; \alpha, \beta) = \frac{1}{B(\alpha, \beta)} x^{\alpha - 1} (1 -
@@ -36,7 +36,7 @@ $$\begin{align}
 B(\alpha, \beta) &:= \int_0^1 t^{\alpha - 1}(1 - t)^{\beta - 1} dt \\ &=
 \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha + \beta)}\label{eq:one}
 \end{align}
-$$ 
+$$
 
 The definition of $$B(\alpha, \beta)$$ above reflects the fact that
 $$f$$ is a probability density function and must integrate to 1.
@@ -144,9 +144,9 @@ this equation.
 
 $$
 \begin{align}
-f(x)&= \frac{1}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha - 1}(1 - 
+f(x)&= \frac{1}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha - 1}(1 -
 x)^{\beta - 1} \int_0^\infty y^{\alpha + \beta - 1} e^{-y} dy \\
-&= \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha - 1}(1 -   
+&= \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha - 1}(1 -
 x)^{\beta - 1}
 \end{align}
 $$
@@ -158,7 +158,7 @@ $$
 \begin{align}
 1 &= \int_0^1
 \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} t^{\alpha - 1}(1 - t)^{\beta - 1} dt \\
-\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha + \beta)} &= 
+\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha + \beta)} &=
 \int_0^1 t^{\alpha - 1}(1 - t)^{\beta - 1} dt
 \end{align}
 $$

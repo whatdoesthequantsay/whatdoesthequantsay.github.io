@@ -3,13 +3,13 @@ layout: post
 title: "A simple mathematical model of congressional geriatric penis pumps"
 description: "inspired by the Daily Show"
 author: stpyang
-tags: [statistics, penispump]
+tags: [stephanie,statistics,penispump]
 ---
 {% include JB/setup %}
 
 <meta property="og:image" content="/assets/images/samantha_bee_daily_show.png" />
 <img style="float:left; width: 250px; padding:10px" src="/assets/images/samantha_bee_daily_show.png" alt="samantha bee is awesome"/>
- 
+
 Last week's hysterical report by the Daily Show's Samantha Bee on
 [federally funded penis pumps](http://thedailyshow.cc.com/videos/pvhtvo/federally-funded-penis-pumps)
 contained a quote which piqued our quantitative interest.  Listen
@@ -36,7 +36,7 @@ members congress could also have a vested interested in penis pumps as
 well, but we do ***not*** want to get into that.
 
 <!-- more -->
- 
+
 Now the number crunching. According to the report, Medicare has spent
 a total of $172 million supplying penis pumps to recipients, at "360
 bucks a pop."  This means a total of 478,000 penis pumps bought from
@@ -79,4 +79,3 @@ congress, which is unlikely to happen anytime soon.
 *Note: As a corollary to these calculations, I became the first
 developer in the history of mankind to type the following command:
 `git merge --squash penispump`.*
-
