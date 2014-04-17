@@ -20,7 +20,6 @@ powermean <- function(samples, d) {
 d <- c(seq(-10,-0.01,by=0.01), seq(0.01,10,by=0.01))
 
 # calculate all the power means
-y <- ((1^d + 99^d)/2)^(1/d)
 y <- sapply(d, function(d) powermean(samples, d))
 
 myPlot <- ggplot() +
