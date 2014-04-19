@@ -75,7 +75,7 @@ URI][btcuri], and run Bitcoinista. Bitcoinista will then read the URI from the
 clipboard and automatically create the transaction for you. All you need to do
 is verify by entering your password.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/JBRK0YJYMck" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/JBRK0YJYMck" style="frameborder:0" allowfullscreen></iframe>
 
 Bitcoinista uses [pybitcointools][pybtc] for checking the wallet balance and
 sending transactions. Specifically we use the API of [blockchain.info][bci] to
