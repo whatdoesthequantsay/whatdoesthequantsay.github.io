@@ -58,6 +58,7 @@ passphrase. We then select an encryption password and the private key is
 encrypted using AES and stored in a `json` file along with the corresponding
 address.
 
+<meta property="og:image" content="/assets/images/bitcoinista_send.png" />
 <img style="float:left; width: 270px; padding:10px" src="/assets/images/bitcoinista_setup.png" alt=""/>
 <img style="float:right; width: 270px; padding:10px" src="/assets/images/bitcoinista_send.png" alt=""/>
 
