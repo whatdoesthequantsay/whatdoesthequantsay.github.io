@@ -100,6 +100,10 @@ Source on github:
 Follow the instructions in `README.md` to install Bitcoinista on your iOS
 device.
 
+Announce post on bitcointalk:
+
+<https://bitcointalk.org/index.php?topic=576895>
+
 
 [dlytech]: http://www.dailytech.com/article.aspx?newsid=34287
 [bbg]: http://www.bloomberg.com/news/2014-02-07/apple-bitcoin-rift-has-currency-s-fans-ditching-iphones.html
