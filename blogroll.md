@@ -10,8 +10,10 @@ group: navigation
 * [mathbabe][cathy]
 * [quomodocumque][jordan]
 * [A Gentleman and a Scala][jliszka]
+* [Foursquare Engineering Blog][foursquare]
 
 [shayne]: http://shayne-fletcher.blogspot.com
 [cathy]: http://mathbabe.org
 [jordan]: http://quomodocumque.wordpress.com
 [jliszka]: http://jliszka.github.io
+[foursquare]: http://engineering.foursquare.com
