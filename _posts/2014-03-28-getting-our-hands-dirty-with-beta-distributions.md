@@ -10,17 +10,14 @@ tags: [stephanie,statistics]
 <meta property="og:image" content="/assets/data/beta.png" />
 <img style="float:left; width: 300px; padding:8px" src="/assets/data/beta.png" alt=""/>
 
-We just finished watching a
-[YouTube tutorial on Dirichlet distributions](https://www.youtube.com/watch?v=6k7IzONQOzM)
-given by Foursquare data scientist Max Sklar.  According to Wikipedia,
-the Dirichlet distribution is the "multivariate generalization of the
-[beta distribution](http://en.wikipedia.org/wiki/Beta_distribution)."
-Yikes!  We confess that the last time we saw a beta distribution was
-around the time Bill Clinton was being impeached.  In this post we
-brush the cobwebs from our minds and derive a basic identity between
-[beta](http://en.wikipedia.org/wiki/Beta_function) and
-[gamma functions](http://en.wikipedia.org/wiki/Gamma_function) and
-illustrate our calculations with R.
+We just finished watching a [YouTube tutorial on Dirichlet distributions][max]
+given by Foursquare data scientist Max Sklar.  According to Wikipedia, the
+Dirichlet distribution is the "multivariate generalization of the [beta
+distribution][wikibetadist]." Yikes!  We confess that the last time we saw a beta
+distribution was around the time Bill Clinton was being impeached.  In this post
+we brush the cobwebs from our minds and derive a basic identity between
+[beta][wikibetafunction] and [gamma functions][wikigammafunction] and illustrate our
+calculations with R.
 
 <!-- more -->
 
@@ -30,7 +27,7 @@ $$f(x; \alpha, \beta) = \frac{1}{B(\alpha, \beta)} x^{\alpha - 1} (1 -
 x)^{\beta - 1},$$
 
 where $$\alpha$$ and $$\beta$$ are shape parameters and $$B$$ is the
-[beta function](http://en.wikipedia.org/wiki/Beta_function) defined as:
+[beta function][wikibetafunction] defined as:
 
 $$\begin{align}
 B(\alpha, \beta) &:= \int_0^1 t^{\alpha - 1}(1 - t)^{\beta - 1} dt \\ &=
@@ -110,9 +107,7 @@ independent, the joint distribution of $$(U,V)$$ is
 $$f(u,v) = \frac{1}{\Gamma(\alpha)\Gamma(\beta)} u^{\alpha - 1}
 v^{\beta - 1} e^{-u - v}.$$
 
-The
-[Jacobian](http://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant)
-of the transformation $$(X,Y) \mapsto (U,V)$$ is
+The [Jacobian][jacobian] of the transformation $$(X,Y) \mapsto (U,V)$$ is
 
 $$
 \begin{vmatrix}
@@ -163,6 +158,12 @@ $$
 \end{align}
 $$
 
-##Conclusion
+## Conclusion ##
 
 This was a nice little exercise to help us remember some statistics.
+
+[max]: https://www.youtube.com/watch?v=6k7IzONQOzM
+[wikibetadist]: http://en.wikipedia.org/wiki/Beta_distribution
+[wikibetafunction]: http://en.wikipedia.org/wiki/Beta_function
+[wikigammafunction]: http://en.wikipedia.org/wiki/Gamma_function
+[jacobian]: http://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant

@@ -7,18 +7,17 @@ tags: [stephanie,metablog]
 ---
 {% include JB/setup %}
 
-One of the most delightful aspects of creating this blog is learning
-how to use [Jekyll Bootstrap](http://jekyllbootstrap.com).  The
-default twitter theme for JB only supports only one author.  In this
-post we describe how we made minimal changes to five files in order to
-add support for multiple authors.
+One of the most delightful aspects of creating this blog is learning how to use
+[Jekyll Bootstrap][jb].  The default twitter theme for JB only supports only one
+author.  In this post we describe how we made minimal changes to five files in
+order to add support for multiple authors.
 
 <!-- more -->
 
-In the snippets below, we have grayed out the parts of the files which have
-not been changed, in order to emphasize the parts which have been changed.
+In the snippets below, we have grayed out the parts of the files which have not
+been changed, in order to emphasize the parts which have been changed.
 
-## Step 1: Change the _config.yml file##
+## Step 1: Change the _config.yml file ##
 
 We first reformatted the author section in the `_config.yml` to support
 more than one author.
@@ -57,7 +56,7 @@ the author's name to appear in the copyright footer (see
 [Step 3](#step3)) and false otherwise.  Guest authors have copyright
 set to false.
 
-##Step 2: Change the Rakefile##
+## Step 2: Change the Rakefile ##
 
 We changed our Rakefile to add an `author:` field into the YAML Front
 Matter of any newly generated post.  This is accomplished with in just
@@ -104,7 +103,7 @@ end # task :post</span>
 The lines that we added are in black.  To create a new post using
 rake, we now use the command ```rake post title="Hello World" author=author1```.
 
-##Step 3: Modify the copyright## {#step3}
+## Step 3: Modify the copyright ## {#step3}
 
 We changed the copyright footer throughout the entire blog to contain
 both of our names.  This step was the trickiest and involved
@@ -137,17 +136,16 @@ like this.
 
 > <p style="font-size:90%">&copy; 2014 Name1 Lastname1 and Name2 Lastname2 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></p>
 
-##Step 4: Create a signature (optional)##
+## Step 4: Create a signature (optional) ##
 
 *Edit: An earlier version of this blog automatically appended a
  signature with the author name and date at the end of each article.
  We now sign and date our articles in the sidebar.*
 
-Every post should be signed and dated by its author at the end of the
-article.  We created a CSS signature class and append it to the end of
-`assets/themes/twitter/css/style.css`.  Ours is blatantly copied from
-the [mark-reid](https://github.com/jekyllbootstrap/theme-mark-reid)
-theme.
+Every post should be signed and dated by its author at the end of the article.
+We created a CSS signature class and append it to the end of
+`assets/themes/twitter/css/style.css`.  Ours is blatantly copied from the
+[mark-reid][mr] theme.
 
     /* signature */
     .signature {
@@ -202,15 +200,18 @@ A signature is now automatically generated for all posts and and looks like this
 
 > <address class="signature"><p style="font-size:90%"><a class="author" href="/">Name1 Lastname1</a><span class="date">16 March 2014</span><span class="location"></span></p></address>
 
-##Run jekyll with custom ports##
+## Run jekyll with custom ports ##
 
 If we are writing articles on our two computers at home and both want
 to run jekyll at the same time, we avoid port collisions by
 specifying different port numbers.  For example: `jekyll serve --port 4001`.
 
-##Conclusion##
+## Conclusion ##
 
 The discussion above uses the twitter bootstrap theme but will carry
 over easily to other themes with minimal effort.  Modifying the code
 to support multiple authors has proved instructive to learning the
 basics of liquid syntax and JB-based blogging.
+
+[jb]: http://whatdoesthequantsay.com/2014/04/18/introducing_bitcoinista/
+[mr]: https://github.com/jekyllbootstrap/theme-mark-reid

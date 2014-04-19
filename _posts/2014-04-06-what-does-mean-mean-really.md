@@ -8,17 +8,13 @@ category:
 ---
 {% include JB/setup %}
 
-[Shayne Fletcher is hooked on computer programming](http://shayne-fletcher.blogspot.com),
-and we are hooked on his blog.  His most recent posts are a
-irresistible introduction to some fundamental statistics via OCaml
-programming, among them a total of ***five*** different
-definitions of the mean value of a sequence.  In this post
-we continue Shayne's discussion with a side dish of calculus and R
-thrown in for good measure.  You should really read Shayne's blog posts on
-[statistics](http://shayne-fletcher.blogspot.com/2014/03/statistics.html)
-and
-[power means](http://shayne-fletcher.blogspot.com/2014/03/power-means.html)
-before you continue reading this.
+[Shayne Fletcher is hooked on computer programming][shayne], and we are hooked
+on his blog.  His most recent posts are a irresistible introduction to some
+fundamental statistics via OCaml programming, among them a total of ***five***
+different definitions of the mean value of a sequence.  In this post we continue
+Shayne's discussion with a side dish of calculus and R thrown in for good
+measure.  You should really read Shayne's blog posts on [statistics][statistics]
+and [power means][powermeans] before you continue reading this.
 
 <!-- more -->
 
@@ -161,3 +157,7 @@ P_d =
 $$
 
 then $$d_1 < d_2$$ implies $$P_{d_1}<P_{d_2}.$$
+
+[shayne]: http://shayne-fletcher.blogspot.com
+[statistics]: http://shayne-fletcher.blogspot.com/2014/03/statistics.html
+[powermeans]: http://shayne-fletcher.blogspot.com/2014/03/power-means.html

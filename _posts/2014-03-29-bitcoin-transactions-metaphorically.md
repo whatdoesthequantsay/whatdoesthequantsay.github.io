@@ -54,7 +54,7 @@ Without further ado, let's dive into our metaphors.
 
 <!-- more -->
 
-##Addresses##
+## Addresses ##
 
 An ***address*** can be thought of as an identifier that holds
 bitcoin. It looks something like 19fb1TrGPcJ3jwCXg7VLVoWVXTFM4oa5PB
@@ -79,7 +79,7 @@ blockchain and look at safes, for instance our example above:
 If we follow the link we see that this safe had 644.4612 bitcoins in
 it on March 26, but right now it sits empty.
 
-##Private Keys##
+## Private Keys ##
 
 For every address there is a corresponding ***private key***. Think of
 this private key as the combination to the combination lock of the
@@ -123,7 +123,7 @@ address. Anyone can have as many safes as they like, and the new safes
 don't take up any space in the blockchain until some coins are
 deposited into them.
 
-##Intermission: Incorrect metaphors will cost you##
+## Intermission: Incorrect metaphors will cost you ##
 
 At this point we have metaphors for addresses and private keys:
 Addresses are safes and keys are the combinations to the locks on
@@ -163,7 +163,7 @@ Neither! You got bitten by your incorrect metaphor. To show how this
 happened we move on to the next section: a better metaphor for
 transactions.
 
-##Transactions##
+## Transactions ##
 
 We've learned about addresses and private keys, which in our metaphor
 corresponds to safes with coins in them and their combinations. How
@@ -258,7 +258,7 @@ transaction to make sure our coins are not lost. In our example we
 thought that our coins were all in 1XXX, which lead to our misfortune
 when we erased the harddrive containing the private key for 1ZZZ.
 
-##Epilogue
+## Epilogue ##
 
 The main goal of this post was to develop a good intuition for
 addresses, private keys, and transactions. This is needed to avoid
@@ -267,7 +267,7 @@ should provide pretty good intuition to avoid these pitfalls but I
 wanted to end with a light introduction to some slightly more advanced
 fun stuff.
 
-###Mommy, where do bitcoins come from?###
+### Mommy, where do bitcoins come from? ###
 
 Performing a transaction ritual as described above is the only way to
 transfer coins between safes, and we notice that every tray with coins
@@ -285,7 +285,7 @@ raffle. [Here is one such coinbase transaction](https://blockchain.info/tx/72dbf
 volunteers are called "miners" and bitcoin mining is a huge subject in
 itself that we won't get into here.
 
-###Pimp my safe###
+### Pimp my safe ###
 
 Most addresses are like the safes described above, i.e. they have one
 combination lock that we unlock with our private key. There are also

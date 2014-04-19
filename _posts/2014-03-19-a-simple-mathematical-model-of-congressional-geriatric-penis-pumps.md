@@ -10,12 +10,10 @@ tags: [stephanie,statistics,penispump]
 <meta property="og:image" content="/assets/images/samantha_bee_daily_show.png" />
 <img style="float:left; width: 250px; padding:10px" src="/assets/images/samantha_bee_daily_show.png" alt="samantha bee is awesome"/>
 
-Last week's hysterical report by the Daily Show's Samantha Bee on
-[federally funded penis pumps](http://thedailyshow.cc.com/videos/pvhtvo/federally-funded-penis-pumps)
-contained a quote which piqued our quantitative interest.  Listen
-carefully at the 4:00 mark, when
-[Ilyse Hogue](http://www.thenation.com/authors/ilyse-hogue) proclaims
-authoritatively:
+Last week's hysterical report by the Daily Show's Samantha Bee on [federally
+funded penis pumps][dailyshow] contained a quote which piqued our quantitative
+interest.  Listen carefully at the 4:00 mark, when [Ilyse Hogue][ilyse]
+proclaims authoritatively:
 
 > *"Statistics show that probably some our members of congress have a
 > vested interested in having penis pumps covered by Medicare!"*
@@ -33,7 +31,7 @@ vested interested in having penis pumps covered by Medicare,"
 specifically means male member of congress who received a penis pump
 covered by federal funds.  Of course, one could argue that female
 members congress could also have a vested interested in penis pumps as
-well, but we do ***not*** want to get into that.
+well, but we ***do not want*** to go there.
 
 <!-- more -->
 
@@ -42,7 +40,7 @@ a total of $172 million supplying penis pumps to recipients, at "360
 bucks a pop."  This means a total of 478,000 penis pumps bought from
 2006 to 2011.
 
-[45% of the current 49,435,610 Medicare recipients are male](http://kff.org/medicare/state-indicator/medicare-beneficiaries-by-gender).
+[45% of the current 49,435,610 Medicare recipients are male][45male].
 In other words, Medicare bought one penis pump for every 46.5
 eligible men.  Inverting this, we can say that 2.15% of male
 Medicare recipients received a penis pump.
@@ -79,3 +77,7 @@ congress, which is unlikely to happen anytime soon.
 *Note: As a corollary to these calculations, I became the first
 developer in the history of mankind to type the following command:
 `git merge --squash penispump`.*
+
+[dailyshow]: http://thedailyshow.cc.com/videos/pvhtvo/federally-funded-penis-pumps
+[ilyse]: http://www.thenation.com/authors/ilyse-hogue
+[45male]: http://kff.org/medicare/state-indicator/medicare-beneficiaries-by-gender
