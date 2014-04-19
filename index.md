@@ -1,15 +1,18 @@
 ---
 layout: page
 title: What does the quant say?
-#tagline: Supporting tagline
-author: stpyang
+tagline: We are a pair of quantitative analysts living in the heart of downtown Manhattan.
 ---
 {% include JB/setup %}
 
-*We are a pair of quantitative analysts living in the heart of
- downtown Manhattan.*
+# Archive #
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
 
-#Recent Posts#
+# Recent Posts #
 <div class="post-content-truncate">
 {% for post in site.posts limit:10 %}
   {% if post.content contains "<!-- more -->" %}
