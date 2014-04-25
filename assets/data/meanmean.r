@@ -17,13 +17,13 @@ powermean <- function(samples, d) {
 }
 
 # x axis goes from -10 to 5 skipping 0
-d <- c(seq(-10,-0.01,by=0.01), seq(0.01,10,by=0.01))
+d <- c(seq(-10,-0.01,by = 0.01), seq(0.01,10,by = 0.01))
 
 # calculate all the power means
 y <- sapply(d, function(d) powermean(samples, d))
 
 myPlot <- ggplot() +
-    geom_line(aes(x=d, y=y), color="#56B4E9") +
+    geom_line(aes(x = d, y = y), color = "#56B4E9") +
     geom_point(size = 5,
                aes(x = -1, y = powermean(samples, -1),color = "#E69F00")) +
     geom_point(size = 5,
@@ -32,7 +32,7 @@ myPlot <- ggplot() +
                aes(x = 1, y = powermean(samples, 1), color = "#F0E442")) +
     geom_point(size = 5,
                aes(x = 2, y = powermean(samples, 2), color = "#0072B2")) +
-    scale_color_manual(values=c("#E69F00","#009E73","#F0E442","#0072B2"),
+    scale_color_manual(values = c("#E69F00","#009E73","#F0E442","#0072B2"),
                        breaks = c("#E69F00", "#009E73", "#F0E442", "#0072B2"),
                        labels = c("harmonic",
                                   "geometric",
@@ -44,5 +44,3 @@ myPlot <- ggplot() +
 
 # ...profit!
 plot(myPlot)
-
-ggsave(myPlot, file = "meanmean.png")
