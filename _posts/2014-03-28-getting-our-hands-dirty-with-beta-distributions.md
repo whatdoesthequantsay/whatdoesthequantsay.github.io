@@ -65,7 +65,7 @@ distribution***.  Before we prove this, we visualize it with some R
 code:
 
 <pre>
-{% include data/meanmean.r %}
+{% include data/beta.r %}
 </pre>
 
 This code generates the pretty picture at the top of this article.
