@@ -19,7 +19,10 @@ yBeta <- dbeta(xBeta, shape1=alpha, shape2=beta)
 
 # plot the density of x versus the pdf of the beta distribution
 myPlot <- ggplot() +
-    geom_histogram(aes(x, y=..density..),binwidth=0.05, color="white", fill="#E69F00") +
+    geom_histogram(aes(x, y=..density..),
+                   binwidth=0.05,
+                   color="white",
+                   fill="#E69F00") +
     geom_line(aes(x=xBeta, y=yBeta), color="#56B4E9") +
     theme(axis.title.x = element_blank()) +
     theme(axis.title.y = element_blank())

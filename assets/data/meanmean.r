@@ -1,6 +1,6 @@
 library(ggplot2)
 
-# set this if you want
+# change these parameters if you want
 max = 100
 num_samples = 100
 
@@ -24,17 +24,25 @@ y <- sapply(d, function(d) powermean(samples, d))
 
 myPlot <- ggplot() +
     geom_line(aes(x=d, y=y), color="#56B4E9") +
-    geom_point(size = 5, aes(x = -1, y = powermean(samples, -1), color = "#E69F00")) +
-    geom_point(size = 5, aes(x = -0, y = powermean(samples, 0), color = "#009E73")) +
-    geom_point(size = 5, aes(x = 1, y = powermean(samples, 1), color = "#F0E442")) +
-    geom_point(size = 5, aes(x = 2, y = powermean(samples, 2), color = "#0072B2")) +
+    geom_point(size = 5,
+               aes(x = -1, y = powermean(samples, -1),color = "#E69F00")) +
+    geom_point(size = 5,
+               aes(x = -0, y = powermean(samples, 0), color = "#009E73")) +
+    geom_point(size = 5,
+               aes(x = 1, y = powermean(samples, 1), color = "#F0E442")) +
+    geom_point(size = 5,
+               aes(x = 2, y = powermean(samples, 2), color = "#0072B2")) +
     scale_color_manual(values=c("#E69F00","#009E73","#F0E442","#0072B2"),
                        breaks = c("#E69F00", "#009E73", "#F0E442", "#0072B2"),
-                       labels = c("harmonic", "geometric", "arithmetic", "quadratic")) +
+                       labels = c("harmonic",
+                                  "geometric",
+                                  "arithmetic",
+                                  "quadratic")) +
     theme(axis.title.x = element_blank()) +
     theme(axis.title.y = element_blank()) +
     theme(legend.title = element_blank())
 
 # ...profit!
 plot(myPlot)
+
 ggsave(myPlot, file = "meanmean.png")
