@@ -122,7 +122,7 @@ myPlot <- ggplot() +
                aes(x = 1, y = powermean(samples, 1), color = "#F0E442")) +
     geom_point(size = 5,
                aes(x = 2, y = powermean(samples, 2), color = "#0072B2")) +
-    scale_color_manual(values=c("#E69F00","#009E73","#F0E442","#0072B2"),
+    scale_color_manual(values = c("#E69F00","#009E73","#F0E442","#0072B2"),
                        breaks = c("#E69F00", "#009E73", "#F0E442", "#0072B2"),
                        labels = c("harmonic",
                                   "geometric",
