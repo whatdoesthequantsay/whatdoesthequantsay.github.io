@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing Bitcoinista"
-description: "Minimalist python wallet for iOS"
+description: "A minimalist python wallet for iOS"
 author: christian
 tags: [bitcoin, christian]
 ---
