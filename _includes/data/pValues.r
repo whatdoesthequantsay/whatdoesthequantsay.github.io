@@ -1,7 +1,7 @@
 library(ggplot2)
 
 # change these parameters if you wnt
-samplesPerExperiment <- 100
+samplesPerExperiment <- 32
 nExperiments <- 1000
 
 # generate the experimental data
@@ -13,10 +13,11 @@ dim(tests) <- c(samplesPerExperiment, nExperiments)
 # this function calculate a p values
 pValue <- function(nSamples1, mean1, var1,
                    nSamples2, mean2, var2) {
-    delta <- mean2 - mean1
+    delta <- mean1 - mean2
     stderr <- sqrt(var1/nSamples1 + var2/nSamples2)
-    z <- delta / stderr
-    1 - pnorm(z, mean = 0, sd = 1)
+    t <- delta / stderr
+    pt(-abs(t), df = 2 * samplesPerExperiment - 2) +
+        1 - pt(abs(t), df = 2 * samplesPerExperiment - 2)
 }
 
 # apply the pValue function to the experimental data
@@ -31,7 +32,7 @@ pVector <- mapply(pValue,
 # plot a histogram
 myPlot <- ggplot() +
     geom_histogram(aes(x = pVector,
-                   fill = ifelse(pVector < 0.05, "#56B4E9", "#E69F00")),
+                   fill = ifelse(pVector <= 0.05, "#56B4E9", "#E69F00")),
                    binwidth = 0.05,
                    color = "white") +
     scale_fill_discrete(name = "Significance",
@@ -42,6 +43,7 @@ myPlot <- ggplot() +
 # ...profit!
 plot(myPlot)
 
+# print out stuff
 sum(pVector <= 0.05)
 sum(pVector > 0.05)
 summary(pVector)
