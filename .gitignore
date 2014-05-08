@@ -1,3 +1,4 @@
+_site/
 _site/*
 _theme_packages/*
 
@@ -5,6 +6,7 @@ Thumbs.db
 .DS_Store
 
 !.gitkeep
+!.gitignore
 
 .rbenv-version
 .rvmrc
