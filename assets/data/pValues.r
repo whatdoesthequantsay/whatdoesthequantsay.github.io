@@ -14,7 +14,8 @@ dim(tests) <- c(samplesPerExperiment, nExperiments)
 pValue <- function(nSamples1, mean1, var1,
                    nSamples2, mean2, var2) {
     delta <- mean1 - mean2
-    stderr <- sqrt(var1/nSamples1 + var2/nSamples2)
+    sp2 <- ((nSamples1 - 1) * var1 + (nSamples2 - 1) * var2) / (nSamples1 + nSamples2 - 2)
+    stderr <- sqrt(sp2 * (1 / nSamples1 + 1 / nSamples2))
     t <- delta / stderr
     pt(-abs(t), df = 2 * samplesPerExperiment - 2) +
         1 - pt(abs(t), df = 2 * samplesPerExperiment - 2)
@@ -44,6 +45,6 @@ myPlot <- ggplot() +
 plot(myPlot)
 
 # print out stuff
-sum(pVector <= 0.05)
-sum(pVector > 0.05)
-summary(pVector)
+print(sum(pVector <= 0.05))
+print(sum(pVector > 0.05))
+print(summary(pVector))

@@ -86,10 +86,10 @@ ugly to reprint here but accessible in R by invoking the ```pt``` function.
 
 === output below ===
 
-[1] 507
-[1] 493
+[1] 528
+[1] 472
      Min.   1st Qu.    Median      Mean   3rd Qu.      Max.
-0.0000004 0.0097810 0.0492300 0.1442000 0.1667000 0.9846000
+0.0000017 0.0086350 0.0418600 0.1444000 0.1918000 0.9951000
 </pre>
 
 This yields the pretty histogram below.
@@ -98,14 +98,14 @@ This yields the pretty histogram below.
 
 In particular, we see that among 1000 simulated experiments, we have
 
-* 507 simulations with $$p$$ values less than or equal to 0.05, thus
+* 528 simulations with $$p$$ values less than or equal to 0.05, thus
  statistically significant by convention
 
-* 493 with $$p$$ values that are not significant by the same convention
+* 472 with $$p$$ values that are not significant by the same convention
 
-* A minimum $$p$$ value of 0.0000004
+* A minimum $$p$$ value of 0.0000017
 
-* A maximum $$p$$ value of 0.9846
+* A maximum $$p$$ value of 0.9951
 
 This yields an almost 50/50 split between "significant" and "not significant".
 With a sample size of only 32, the $$p$$ value is not a reliable measure of
@@ -125,13 +125,13 @@ and 100. This yielded the following two histograms for $$p$$ values.
 <img style="float:left; width: 270px; padding:10px" src="/assets/data/pHist_10.png" alt=""/>
 <img style="float:right; width: 270px; padding:10px" src="/assets/data/pHist_100.png" alt=""/>
 
-The small sample size 10 had 180 out of 1000 simulations yielding a $$p$$
+The small sample size 10 had 189 out of 1000 simulations yielding a $$p$$
 value of below 0.05. The histogram of $$p$$ values is on the left. Although
 these could be labelled as "statistically significant" by an unscrupulous
 researcher, we claim that none of the results are particularly significant; they
 just happen to be lucky.
 
-The larger sample size 100 jad 953 out of 1000 simulations yielding a $$p$$
+The larger sample size 100 had 943 out of 1000 simulations yielding a $$p$$
 value of below 0.05. The histogram of $$p$$ values is on the right. The $$p$$
 value in this case is much more reliable. Perhaps we should revise our original
 statement to say "don't trust $$p$$ *for small experiments*."
