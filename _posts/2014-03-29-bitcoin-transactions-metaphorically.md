@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bitcoin transactions, metaphorically"
+title: "Bitcoin transactions, metaphorically (Part 1)"
 description: ""
 author: christian
 tags: [christian,bitcoin]
