@@ -3,7 +3,7 @@ layout: post
 title: "Bitcoin transactions, technically (Part 2)"
 description: ""
 author: christian
-tags: [christian]
+tags: [christian,bitcoin]
 category: 
 ---
 {% include JB/setup %}
