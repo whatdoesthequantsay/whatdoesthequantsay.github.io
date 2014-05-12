@@ -28,8 +28,8 @@ a freakish new level by nerds.  And while some cosplayers are hot,
 many are not, but *all* have one thing in common: too much free time
 on their hands.
 
-Cosplay costumes are a ***much*** bigger investment in effort, time,
-and money than average laymen like us would ever dare to spend in a
+Cosplay costumes are a *much* bigger investment in effort, time, and
+money than average laymen like us would ever dare to spend in a
 costume.  As a result, most of them are pretty good, and a few of them
 are [downright amazing][goodcosplay].  Enter Cosplay Hulk, who has
 smashed the bounds on what it means to be *bad* at something. In his
@@ -66,7 +66,7 @@ meta-costume that we know of.
 true modern day superhero. He could be any one among us, but we will
 never know. Who lies under the green mask?  Does he use his anonymity
 to fight crime?  Who is his nemesis?  Is he friends with a girl who
-only loves his cosplay form and doesn't know that they are one in the
+only loves his cosplay form and doesn't know that they are one and the
 same?
 
 Cosplay Hulk, if you're ever reading this, please know we are huge
