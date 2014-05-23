@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to stay alive...underwater (part 1)"
+title: "How to stay alive...underwater (Part 1)"
 description: ""
 author: stpyang
 tags: [scuba]
