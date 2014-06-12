@@ -66,11 +66,12 @@ three courses we took with our PADI instructors. We consider this a
 shortcoming of their curriculum. Divers must know how quickly they are
 consuming gas in order to safely plan and execute their dives.
 
-We measured our SAC in four feet of water in a pristine outdoor swimming pool
-of the nicest days of the year. In other words, there was no surge, no
-current, and no stress. Under normal scuba conditions which are more
-challenging than a shallow swimming pool, we generally use double our SAC rate
-in our calculations to give us a safety margin.
+We measured our SAC in four feet of water in a pristine outdoor
+swimming pool of the nicest days of the year. In other words, there
+was no surge, no current, and no stress. Under normal scuba conditions
+which are more challenging than a shallow swimming pool, we generally
+use a SAC rate of 1.0 cubic feet per minute in our calculations to
+give us a safety margin.
 
 ### Ambient pressure ###
 
