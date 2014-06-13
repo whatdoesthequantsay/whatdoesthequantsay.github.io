@@ -87,7 +87,7 @@ where the coefficients are
 
 $$
 \begin{align}
-A &= s \cdot t\\
+A &= s \cdot t,\\
 B &= \frac{s}{2} \left( \frac{1}{v_1} + \frac{1}{v_2} + \frac{2t}{D}\right), \\
 C &= \frac{s}{8 D} \left( \frac{3}{v_1} + \frac{1}{v_2} \right).
 \end{align}
@@ -132,7 +132,7 @@ C &= \frac{2\mathrm{\ feet}^3}{8 \cdot 33\mathrm{\ min\ feet}} \left(
 $$
  
 Note that $$A$$ has units of cubic feet, $$B$$ has units of square
-feet, $$C$$ has units of feet, so that $g(d)$ has units of cubic feet,
+feet, $$C$$ has units of feet, so that $$g(d)$$ has units of cubic feet,
 which is exactly what we expect!
 
 We now convert cubic feet to tank pressure. By the
@@ -142,7 +142,7 @@ cubic feet of gas at 3000 psi. Therefore the amount $$g(d)$$
 corresponds to a tank pressure of
 
 $$
-g(d)*3000/75 = 40 g(d).
+g(d) \cdot 3000/75 = 40 g(d).
 $$
 
 Finally then we have the following formula for the minimum tank
@@ -153,6 +153,8 @@ m(d) = 40 g(d) = 40 \left( 2 + \frac{32}{165} d
 + \frac{1}{660} d^2 \right) = 80 + \frac{256}{33} d + \frac{2}{33} d^2.
 $$
 
+As an example, when $$d = 60$$ feet we obtain $$g(d) \approx 19.09$$
+cubic feet and $$m(d) \approx 763.6$$ psi.
 
 ## Calculation: 30 to 60 feet ##
 
@@ -187,8 +189,10 @@ C &= \frac{1}{990} \approx 0.00101 \mathrm{\ feet}
 $$ 
 
 Note that when $$d = 60$$, this gives us $$19.09$$ cubic feet or
-$$763.6$$ psi, which is exactly the same as the previous formula for $$d
-= 60$$.
+$$763.6$$ psi, which is exactly the same as the previous formula for
+$$d = 60$$. We also have for $$d = 30$$ that the amount of gas used is
+$$12.55$$ cubic feet, corresponding to a tank pressure of $$501.8$$
+psi.
 
 ## Calculation: less than 30 feet ##
 
@@ -221,8 +225,13 @@ $$501.8$$ psi, which matches our second formula.
 
 ## Summary ##
 
-To summarize we compute the minimum gas requirements for various
-depths here
+Using the above formulas we can compute the minimum gas requirements
+in psi for various depths. To recap, these numbers represent the tank
+pressure where we need to start ascending in order to be able to
+handle an emergency out of gas situation. Note that these values
+represent the values for *our particular SAC rate* and is not a
+general guideline. The reader needs to determine her own SAC rate in
+order to compute the corresponding numbers.
 
 |Depth | Minimum psi for a 80 cubic foot aluminum tank|
 |-|-|
