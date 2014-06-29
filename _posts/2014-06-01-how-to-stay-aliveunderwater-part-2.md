@@ -12,10 +12,10 @@ category:
 
 As a follow-up to our [previous post][part1] we will now work through
 the minimum gas calculations we discussed. The specific worst-case
-scenario that we must be able to handle is this following: One of us
+scenario that we must be able to handle is this following: one of us
 is cut off from our gas when we are at the deepest part of the
 dive. If this happens then we need enough gas in the remaning buddy's
-tank to support a safe ascent including all safety stops.
+cylinder to support a safe ascent including all safety stops.
 
 Let us quickly review how we do our safety stops for dives up to 100
 feet deep. In this case we perform what's known as "minimum deco",
@@ -31,8 +31,10 @@ considerations, but that's a topic for a different blog post.
 
 In order to simplify our calculation we will approximate a 30 second
 safety stop at depth $$x$$ followed by a 30 second ascent to $$x-10$$
-by a 60 second ascent from $$x$$ to $$x-10$$. In other words, we
-assume a 10 ft/min constant ascent rate.
+by a 60 second ascent from $$x$$ to $$x-10$$. In other words, while we
+are alternate between 30 second safety stops and 30 second ascents
+during the very last part of our dive, we will assume a 10 ft/min
+constant ascent rate (because of our simplifying assumption).
 
 Also note that the pressure $$p(x)$$ at a depth $$x$$ in ATA can be
 computed as $$p(x) = (1 + x/D)$$, where $$D$$ is the depth at which
@@ -135,11 +137,11 @@ Note that $$A$$ has units of cubic feet, $$B$$ has units of square
 feet, $$C$$ has units of feet, so that $$g(d)$$ has units of cubic feet,
 which is exactly what we expect!
 
-We now convert cubic feet to tank pressure. By the
-[ideal gas law][gaslaw] the gas amount is directly proportional to the
-pressure in the tank. A standard aluminum tank will contain around 75
-cubic feet of gas at 3000 psi. Therefore the amount $$g(d)$$
-corresponds to a tank pressure of
+We now convert cubic feet to pressure. By the [ideal gas law][gaslaw]
+the gas amount is directly proportional to the pressure in the
+cylinder. A standard aluminum 80 cubic foot cylinder will contain
+around 75 cubic feet of gas at 3000 psi. Therefore the amount $$g(d)$$
+corresponds to a pressure of
 
 $$
 g(d) \cdot 3000/75 = 40 g(d).
@@ -231,16 +233,16 @@ pressure where we need to start ascending in order to be able to
 handle an emergency out of gas situation. Note that these values
 represent the values for *our particular SAC rate* and is not a
 general guideline. The reader needs to determine her own SAC rate in
-order to compute the corresponding numbers.
+order to compute the corresponding numbers, as well as adjust the
+computations if she is diving with a different type of cylinder.
 
-|Depth | Minimum psi for a 80 cubic foot aluminum tank|
-|-|-|
-|20 | 337|
-|40 | 581|
-|60 | 764 |
-|80 | 1088|
-|100 | 1462|
-
+|Depth|Minimum psi for a 80 cubic foot aluminum cylinder.
+|-|-
+|20 | 337 
+|40 | 581 
+|60 | 764 
+|80 | 1088 
+|100 | 1462 
 
 [part1]: http://whatdoesthequantsay.com/2014/05/23/how-to-stay-aliveunderwater-part-1/
 [gaslaw]: https://en.wikipedia.org/wiki/Ideal_gas_law
