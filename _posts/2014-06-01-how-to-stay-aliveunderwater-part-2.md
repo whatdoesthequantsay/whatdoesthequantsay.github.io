@@ -3,7 +3,7 @@ layout: post
 title: "How to stay alive...underwater (Part 2)"
 description: ""
 author: christian
-tags: []
+tags: [scuba]
 category: 
 ---
 {% include JB/setup %}
@@ -26,6 +26,8 @@ stop, then ascend 10 ft in 30 seconds, then do another 30 second stop,
 ascent 10 ft in 30 seconds etc until we reach the surface.  Dives
 deeper than 100 feet require a different algorithm and different
 considerations, but that's a topic for a different blog post.
+
+<!-- more -->
 
 ## Calculation: between 60 and 100 feet ##
 
@@ -140,23 +142,23 @@ which is exactly what we expect!
 We now convert cubic feet to pressure. By the [ideal gas law][gaslaw]
 the gas amount is directly proportional to the pressure in the
 cylinder. A standard aluminum 80 cubic foot cylinder will contain
-around 75 cubic feet of gas at 3000 psi. Therefore the amount $$g(d)$$
+around 77 cubic feet of gas at 3000 psi. Therefore the amount $$g(d)$$
 corresponds to a pressure of
 
 $$
-g(d) \cdot 3000/75 = 40 g(d).
+g(d) \cdot 3000/77 \approx 38.9 \cdot g(d).
 $$
 
 Finally then we have the following formula for the minimum tank
 pressure $$m(d)$$ that we need to safely ascend:
 
 $$
-m(d) = 40 g(d) = 40 \left( 2 + \frac{32}{165} d
-+ \frac{1}{660} d^2 \right) = 80 + \frac{256}{33} d + \frac{2}{33} d^2.
+m(d) = \frac{3000g(d)}{77} = \frac{3000}{77}\left( 2 + \frac{32}{165} d
++ \frac{1}{660} d^2 \right) = \frac{6000}{77} + \frac{19200}{2541} d + \frac{50}{847} d^2.
 $$
 
 As an example, when $$d = 60$$ feet we obtain $$g(d) \approx 19.09$$
-cubic feet and $$m(d) \approx 763.6$$ psi.
+cubic feet and $$m(d) \approx 743.8$$ psi.
 
 ## Calculation: 30 to 60 feet ##
 
@@ -191,9 +193,9 @@ C &= \frac{1}{990} \approx 0.00101 \mathrm{\ feet}
 $$ 
 
 Note that when $$d = 60$$, this gives us $$19.09$$ cubic feet or
-$$763.6$$ psi, which is exactly the same as the previous formula for
+$$743.8$$ psi, which is exactly the same as the previous formula for
 $$d = 60$$. We also have for $$d = 30$$ that the amount of gas used is
-$$12.55$$ cubic feet, corresponding to a tank pressure of $$501.8$$
+$$12.55$$ cubic feet, corresponding to a tank pressure of $$488.8$$
 psi.
 
 ## Calculation: less than 30 feet ##
@@ -223,7 +225,7 @@ C &= \frac{1}{330} \approx 0.00303 \mathrm{\ feet}
 $$ 
 
 Plugging in the value $$d = 30$$ gives us $$12.55\mathrm{\ feet}^3$$ or
-$$501.8$$ psi, which matches our second formula.
+$$488.8$$ psi, which matches our second formula.
 
 ## Summary ##
 
@@ -238,11 +240,11 @@ computations if she is diving with a different type of cylinder.
 
 |Depth|Minimum psi for a 80 cubic foot aluminum cylinder.
 |-|-
-|20 | 337 
-|40 | 581 
-|60 | 764 
-|80 | 1088 
-|100 | 1462 
+|20 | 328 
+|40 | 566
+|60 | 744
+|80 | 1060 
+|100 | 1424
 
 [part1]: http://whatdoesthequantsay.com/2014/05/23/how-to-stay-aliveunderwater-part-1/
 [gaslaw]: https://en.wikipedia.org/wiki/Ideal_gas_law
