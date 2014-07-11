@@ -4,11 +4,9 @@ title: "How to stay alive...underwater (Part 2)"
 description: ""
 author: christian
 tags: [scuba]
-category: 
+category:
 ---
 {% include JB/setup %}
-
-## Introduction ##
 
 As a follow-up to our [previous post][part1] we will now work through
 the minimum gas calculations we discussed. The specific worst-case
@@ -49,9 +47,9 @@ as $$s\cdot p(x) \Delta x / v$$. The amount of gas consumed when
 ascending from a depth $$d$$ can thus be computed as the sum of two
 integrals
 
-$$ 
-\int_{d/2}^{d} \frac{s\cdot p(x)}{v_1} dx + \int_{0}^{d/2} \frac{s\cdot p(x)}{v_2} dx 
-$$ 
+$$
+\int_{d/2}^{d} \frac{s\cdot p(x)}{v_1} dx + \int_{0}^{d/2} \frac{s\cdot p(x)}{v_2} dx
+$$
 
 where $$v_1$$ is the ascent rate from $$d$$ to $$d/2$$ and $$v_2$$ is
 the ascent rate from $$d/2$$ to the surface. For us, $$v_1$$ is 30
@@ -67,16 +65,16 @@ of gas we use is:
 
 $$
 \begin{align}
-g(d) 
+g(d)
 &= s \cdot p(d) \cdot t+  \int_{d/2}^{d} \frac{s\cdot p(x)}{v_1} dx + \int_{0}^{d/2} \frac{s\cdot p(x)}{v_2} dx \\
-&= s \cdot p(d) \cdot t +  \frac{s}{v_1} \int_{d/2}^{d} \left( 1 + \frac{x}{D} \right) dx 
+&= s \cdot p(d) \cdot t +  \frac{s}{v_1} \int_{d/2}^{d} \left( 1 + \frac{x}{D} \right) dx
 + \frac{s}{v_2} \int_{0}^{d/2} \left( 1 + \frac{x}{D} \right)dx \\
-%&= s \cdot t\left(1 + \frac{d}{D} \right) +  \frac{s}{v_1} \left( \frac{d}{2} + \left[ \frac{x^2}{2 D} \right]_{d/2}^{d} \right) 
+%&= s \cdot t\left(1 + \frac{d}{D} \right) +  \frac{s}{v_1} \left( \frac{d}{2} + \left[ \frac{x^2}{2 D} \right]_{d/2}^{d} \right)
 %+ \frac{s}{v_2} \left( \frac{d}{2} + \left[ \frac{x^2}{2 D} \right]_{0}^{d/2} \right) \\
-&= s \cdot t\left( 1 + \frac{d}{D} \right) +  \frac{s}{v_1} \left( \frac{d}{2} + \frac{ 3 d^2}{8 D} \right) 
+&= s \cdot t\left( 1 + \frac{d}{D} \right) +  \frac{s}{v_1} \left( \frac{d}{2} + \frac{ 3 d^2}{8 D} \right)
 + \frac{s}{v_2} \left( \frac{d}{2} + \frac{d^2}{8 D} \right) \\
-&= s \cdot t + \frac{s}{2} \left( \frac{1}{v_1} + \frac{1}{v_2} + \frac{2t}{D} \right) d 
-+ \frac{s}{8 D} \left( \frac{3}{v_1} + \frac{1}{v_2} \right) d^2. 
+&= s \cdot t + \frac{s}{2} \left( \frac{1}{v_1} + \frac{1}{v_2} + \frac{2t}{D} \right) d
++ \frac{s}{8 D} \left( \frac{3}{v_1} + \frac{1}{v_2} \right) d^2.
 \end{align}
  $$
 
@@ -115,8 +113,8 @@ $$
 
 Plugging in these values we obtain
 
-$$  
-\begin{align} 
+$$
+\begin{align}
 A &= \left(
 	\frac{2 \mathrm{\ feet}^3}{\mathrm{min}}
 \right) \cdot \left(1\mathrm{\ min}\right)
@@ -127,14 +125,14 @@ B &= \left(2\frac{\mathrm{\ feet}^3}{\mathrm{min}}\right)\cdot
 		+ \frac{1\mathrm{\ min}}{10\mathrm{\ feet}}
 		+ \frac{2\mathrm{\ min}}{33\mathrm{\ feet}}
 	\right)
-= \frac{32}{165}\mathrm{\ feet}^2 \approx 0.194\mathrm{\ feet}^2 \\ 
+= \frac{32}{165}\mathrm{\ feet}^2 \approx 0.194\mathrm{\ feet}^2 \\
 C &= \frac{2\mathrm{\ feet}^3}{8 \cdot 33\mathrm{\ min\ feet}} \left(
 	\frac{3\mathrm{\ min}}{30\mathrm{\ feet}}
 	+ \frac{1\mathrm{\ min}}{10\mathrm{\ feet}} \right)
 	= \frac{1}{660}\mathrm{\ feet} \approx 0.00151 \mathrm{\ feet}
-\end{align} 
+\end{align}
 $$
- 
+
 Note that $$A$$ has units of cubic feet, $$B$$ has units of square
 feet, $$C$$ has units of feet, so that $$g(d)$$ has units of cubic feet,
 which is exactly what we expect!
@@ -166,31 +164,31 @@ The calculation is similar to the one above, except that we begin our
 safety stops at $$u = 30$$ feet instead of $$d/2$$ feet.
 Thus the integral becomes
 
-$$ 
+$$
 \begin{align}
-g(d) 
+g(d)
 &= s \cdot p(d) \cdot t+  \int_{u}^{d} \frac{s\cdot p(x)}{v_1} dx + \int_{0}^{u} \frac{s\cdot p(x)}{v_2} dx \\
-&= s \cdot p(d) \cdot t +  \frac{s}{v_1} \int_{u}^{d} \left( 1 + \frac{x}{D} \right) dx 
+&= s \cdot p(d) \cdot t +  \frac{s}{v_1} \int_{u}^{d} \left( 1 + \frac{x}{D} \right) dx
 + \frac{s}{v_2} \int_{0}^{u} \left( 1 + \frac{x}{D} \right)dx \\
 %&= s \cdot t\left(1 + \frac{d}{D} \right) +  \frac{s}{v_1} \left(d - u + \left[ \frac{x^2}{2 D} \right]_{u}^{d} \right)
 %+ \frac{s}{v_2} \left( u + \left[ \frac{x^2}{2 D} \right]_{0}^{u} \right) \\
-&= s \cdot t\left( 1 + \frac{d}{D} \right) +  \frac{s}{v_1} \left(d - u + \frac{d^2 - u^2}{2 D} \right) 
+&= s \cdot t\left( 1 + \frac{d}{D} \right) +  \frac{s}{v_1} \left(d - u + \frac{d^2 - u^2}{2 D} \right)
 + \frac{s}{v_2} \left(u + \frac{u^2}{2D} \right) \\
 &= s \cdot \left(t - \frac{u}{v_1} -\frac{u^2}{2Dv_1} +\frac{u}{v_2} +
-\frac{u^2}{2Dv_2}\right) + s\left( \frac{1}{v_1} + \frac{t}{D} \right) d 
-+ \left( \frac{s}{2Dv_1}\right) d^2. 
+\frac{u^2}{2Dv_2}\right) + s\left( \frac{1}{v_1} + \frac{t}{D} \right) d
++ \left( \frac{s}{2Dv_1}\right) d^2.
 \end{align}
-$$ 
+$$
 
 and our values for $$A$$, $$B$$, and $$C$$ become:
 
-$$ 
+$$
 \begin{align}
 A &= \frac{86}{11} \approx 7.82 \mathrm{\ feet}^3\\
 B &= \frac{7}{55} \approx 0.127\mathrm{\ feet}^2\\
 C &= \frac{1}{990} \approx 0.00101 \mathrm{\ feet}
 \end{align}
-$$ 
+$$
 
 Note that when $$d = 60$$, this gives us $$19.09$$ cubic feet or
 $$743.8$$ psi, which is exactly the same as the previous formula for
@@ -204,9 +202,9 @@ Diving at less than 30 feet we will approximate our ascent by going
 directly to the surface at 10 ft per minute. Our integral then
 becomes:
 
-$$ 
-\begin{align} 
-g(d) 
+$$
+\begin{align}
+g(d)
 &= s \cdot p(d) \cdot t+ \int_{0}^{d} \frac{s\cdot p(x)}{v_2} dx \\
 &= s \cdot p(d) \cdot t + \frac{s}{v_2} \int_{0}^{d} \left( 1 + \frac{x}{D} \right)dx \\
 &= s \cdot t\left(1 + \frac{d}{D} \right) + \frac{s}{v_2} \left(d + \frac{d^2}{2 D}  \right) \\
@@ -216,13 +214,13 @@ $$
 
 and our values for $$A$$, $$B$$, and $$C$$ become:
 
-$$ 
+$$
 \begin{align}
 A &= 2 \mathrm{\ feet}^3\\
 B &= \frac{43}{165} \approx 0.261\mathrm{\ feet}^2\\
 C &= \frac{1}{330} \approx 0.00303 \mathrm{\ feet}
 \end{align}
-$$ 
+$$
 
 Plugging in the value $$d = 30$$ gives us $$12.55\mathrm{\ feet}^3$$ or
 $$488.8$$ psi, which matches our second formula.
@@ -240,10 +238,10 @@ computations if she is diving with a different type of cylinder.
 
 |Depth|Minimum psi for a 80 cubic foot aluminum cylinder.
 |-|-
-|20 | 328 
+|20 | 328
 |40 | 566
 |60 | 744
-|80 | 1060 
+|80 | 1060
 |100 | 1424
 
 [part1]: http://whatdoesthequantsay.com/2014/05/23/how-to-stay-aliveunderwater-part-1/
